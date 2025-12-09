@@ -728,6 +728,19 @@ section {
     color: var(--text-light);
 }
 
+.collab-image-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.collab-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
 /* 가이드 섹션 */
 .guide {
     background: var(--bg-light);
