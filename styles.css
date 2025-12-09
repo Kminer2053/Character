@@ -695,6 +695,15 @@ section {
     margin-bottom: 1rem;
 }
 
+.goods-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow);
+}
+
 .goods-name {
     font-weight: 600;
     color: var(--text-dark);
