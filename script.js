@@ -162,6 +162,92 @@ window.addEventListener('load', () => {
     document.body.style.opacity = '1';
 });
 
+// 스토리 아이콘 이미지 로드 오류 처리
+const iconImages = document.querySelectorAll('.icon-image img');
+iconImages.forEach(img => {
+    img.addEventListener('error', function() {
+        // 이미지 로드 실패 시 이모지로 대체
+        const parent = this.parentElement;
+        if (parent) {
+            const dataStory = parent.closest('.icon-item')?.getAttribute('data-story');
+            let emoji = '📦';
+            if (dataStory === 'on-mode') emoji = '🏢';
+            else if (dataStory === 'coco') emoji = '🚅';
+            else if (dataStory === 'nyam') emoji = '⛺';
+            
+            parent.innerHTML = `<div style="font-size: 3rem;">${emoji}</div>`;
+        }
+    });
+});
+
+// 스토리 아이콘 클릭 기능
+const storyIconItems = document.querySelectorAll('.icon-item[data-story]');
+const storyImages = document.querySelectorAll('.story-image');
+
+if (storyIconItems.length > 0 && storyImages.length > 0) {
+    // 초기 로드 시 첫 번째 이미지(ON 모드) 활성화
+    const firstImage = document.querySelector('#story-on-mode');
+    const imageContainer = document.querySelector('.story-image-container');
+    if (firstImage && imageContainer) {
+        firstImage.classList.add('active');
+        imageContainer.classList.add('has-active-image');
+    }
+    storyIconItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const storyType = item.getAttribute('data-story');
+            
+            // 활성 아이콘 스타일 변경
+            storyIconItems.forEach(icon => icon.classList.remove('active'));
+            item.classList.add('active');
+            
+            // 해당 스토리 이미지 표시
+            const imageContainer = document.querySelector('.story-image-container');
+            let hasActiveImage = false;
+            
+            storyImages.forEach(img => {
+                img.classList.remove('active');
+                if (img.id === `story-${storyType}`) {
+                    img.classList.add('active');
+                    hasActiveImage = true;
+                }
+            });
+            
+            // 플레이스홀더 표시/숨김 제어
+            if (imageContainer) {
+                if (hasActiveImage) {
+                    imageContainer.classList.add('has-active-image');
+                } else {
+                    imageContainer.classList.remove('has-active-image');
+                }
+            }
+        });
+    });
+    
+    // 이미지 로드 오류 처리
+    storyImages.forEach(img => {
+        img.addEventListener('error', function() {
+            this.style.display = 'none';
+            // 모든 이미지가 로드 실패하면 플레이스홀더 표시
+            const visibleImages = Array.from(storyImages).filter(img => 
+                img.style.display !== 'none' && img.classList.contains('active')
+            );
+            if (visibleImages.length === 0) {
+                const placeholder = document.querySelector('.story-placeholder');
+                if (placeholder) {
+                    placeholder.style.display = 'flex';
+                }
+            }
+        });
+        
+        img.addEventListener('load', function() {
+            const imageContainer = document.querySelector('.story-image-container');
+            if (imageContainer && this.classList.contains('active')) {
+                imageContainer.classList.add('has-active-image');
+            }
+        });
+    });
+}
+
 // 히어로 이미지 로드 오류 처리
 const heroImage = document.querySelector('.hero-character-img');
 if (heroImage) {
