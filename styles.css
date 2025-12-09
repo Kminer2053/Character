@@ -419,6 +419,13 @@ section {
     gap: 0.75rem;
 }
 
+/* 키워드 태그 컨테이너 */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
 .tag {
     background: white;
     color: var(--primary-color);
@@ -1069,6 +1076,29 @@ section {
 
     .character-name {
         font-size: 2rem;
+    }
+
+    /* 프로필 키워드/태그 모바일 최적화 */
+    .tags {
+        gap: 0.5rem;
+    }
+
+    .tag {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* 세계관 아이콘 한 줄 스크롤 */
+    .story-icons {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        gap: 1rem;
+    }
+
+    .icon-item {
+        min-width: 140px;
+        flex: 0 0 auto;
     }
 
     .character-subtitle {
