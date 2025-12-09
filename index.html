@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코레일유통 - 고유통(Go Yu-Tong)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="#home">고유통</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">홈</a></li>
+                    <li><a href="#about">캐릭터 소개</a></li>
+                    <li><a href="#story">세계관 & 스토리</a></li>
+                    <li><a href="#gallery">라이브러리</a></li>
+                    <li><a href="#goods">굿즈 & 콜라보</a></li>
+                    <li><a href="#guide">가이드 & 다운로드</a></li>
+                    <li><a href="#news">뉴스 & 이벤트</a></li>
+                    <li><a href="#contact">문의</a></li>
+                </ul>
+                <button class="hamburger" aria-label="메뉴">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="assets/images/hero-character.gif" 
+                         alt="고유통 캐릭터 - 코레일유통 대리" 
+                         class="hero-character-img">
+                </div>
+                <div class="hero-text">
+                    <h1 class="character-name">고유통 (Go Yu-Tong)</h1>
+                    <p class="character-subtitle">코레일유통 미래성장처 대리</p>
+                    <p class="character-tagline">
+                        "오늘도 고객님과 통(通)하러 갑니다!"<br>
+                        빈틈없는 일잘러와 열정 만렙 여행가를 오가는 반전 매력
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary">고 대리의 이중생활 보기</a>
+                        <a href="#guide" class="btn btn-secondary">가이드 다운로드</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 캐릭터 소개 섹션 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">캐릭터 소개</h2>
+            <div class="about-content">
+                <div class="character-profile">
+                    <div class="profile-image">
+                        <div class="image-container">
+                            <img src="assets/images/profile-on-mode.png" 
+                                 alt="고유통 프로필 - 사무실 모드" 
+                                 class="profile-img active" 
+                                 id="profile-img-1">
+                            <img src="assets/images/profile-off-mode.png" 
+                                 alt="고유통 프로필 - 기차역 모드" 
+                                 class="profile-img" 
+                                 id="profile-img-2">
+                            <div class="image-overlay">
+                                <p class="mode-label">ON 모드</p>
+                            </div>
+                        </div>
+                        <p class="image-hint">💡 호버 또는 클릭하면 OFF 모드를 볼 수 있어요!</p>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-card">
+                            <h3>프로필</h3>
+                            <ul class="profile-list">
+                                <li><strong>이름:</strong> 고유통 (직급: 대리)</li>
+                                <li><strong>나이:</strong> 20대 후반 (신입티를 벗은 프로)</li>
+                                <li><strong>키워드:</strong> 
+                                    <span class="tags">
+                                        <span class="tag">#맑은눈의광인</span>
+                                        <span class="tag">#갓생살기</span>
+                                        <span class="tag">#로코노미덕후</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="personality">
+                            <h4>성격 (MBTI: ESTJ + ESFJ)</h4>
+                            <div class="personality-points">
+                                <div class="point">계획적(J)</div>
+                                <div class="point">오지랖넓음(E)</div>
+                                <div class="point">데이터맹신</div>
+                                <div class="point">지역맛집진심</div>
+                            </div>
+                        </div>
+                        <div class="story-line">
+                            <h4>한 줄 스토리</h4>
+                            <p>"코레일유통의 미래를 책임지는 스마트한 직원. 하지만 지역 특산물만 보면 눈이 돌아가(?) 점퍼를 입고 현장으로 달려가는 열혈 큐레이터."</p>
+                        </div>
+                        <div class="hashtags">
+                            <span class="tag">#코레일유통</span>
+                            <span class="tag">#고대리</span>
+                            <span class="tag">#퇴근후_팝업스토어</span>
+                            <span class="tag">#너와나의_연결고리</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 세계관 & 스토리 섹션 -->
+    <section id="story" class="story">
+        <div class="container">
+            <h2 class="section-title">세계관 & 스토리</h2>
+            <div class="story-content">
+                <div class="story-text">
+                    <h3>주 활동 무대</h3>
+                    <p>서울 본사 스마트 오피스와 전국의 KTX 역사, 그리고 숨겨진 지역 맛집을 쉴 새 없이 오갑니다.</p>
+                    
+                    <h3>함께하는 친구들 (세계관)</h3>
+                    <p>
+                        <strong>🤖 코코(Co-Co):</strong> 팩트 폭격을 날리는 AI 드론 비서<br>
+                        <strong>🍎 냠이(Nyam):</strong> 지역 특산물이 변신한 꼬마 요정들
+                    </p>
+                    
+                    <div class="story-icons">
+                        <div class="icon-item">
+                            <div class="icon-placeholder">🏢</div>
+                            <p>스마트 오피스<br>(ON 모드)</p>
+                        </div>
+                        <div class="icon-item">
+                            <div class="icon-placeholder">🚅</div>
+                            <p>KTX/역사<br>(출장중)</p>
+                        </div>
+                        <div class="icon-item">
+                            <div class="icon-placeholder">⛺</div>
+                            <p>팝업 현장<br>(OFF 모드)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-visual">
+                    <div class="character-placeholder">
+                        <p>세계관 일러스트</p>
+                        <p class="placeholder-desc">서브 캐릭터/환경이 있다면 다이어그램/월드맵을 넣어주세요</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 캐릭터 라이브러리 / 갤러리 -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">캐릭터 라이브러리</h2>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">전체</button>
+                <button class="filter-btn" data-filter="expression">표정</button>
+                <button class="filter-btn" data-filter="action">동작</button>
+                <button class="filter-btn" data-filter="situation">상황</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="expression">
+                    <div class="gallery-placeholder">
+                        <p>엄근진(진지)</p>
+                    </div>
+                    <div class="gallery-tags">
+                        <span class="tag">#진지</span>
+                        <span class="tag">#일잘러</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="expression">
+                    <div class="gallery-placeholder">
+                        <p>활짝 웃음</p>
+                    </div>
+                    <div class="gallery-tags">
+                        <span class="tag">#기쁨</span>
+                        <span class="tag">#활기</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="expression">
+                    <div class="gallery-placeholder">
+                        <p>당황함</p>
+                    </div>
+                    <div class="gallery-tags">
+                        <span class="tag">#당황</span>
+                        <span class="tag">#귀여움</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="situation">
+                    <div class="gallery-placeholder">
+                        <p>결재판 든 모습</p>
+                    </div>
+                    <div class="gallery-tags">
+                        <span class="tag">#업무중</span>
+                        <span class="tag">#프로</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="situation">
+                    <div class="gallery-placeholder">
+                        <p>맛집에서 감동한 모습</p>
+                    </div>
+                    <div class="gallery-tags">
+                        <span class="tag">#맛집</span>
+                        <span class="tag">#로코노미</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="action">
+                    <div class="gallery-placeholder">
+                        <p>현장으로 달려가는 모습</p>
+                    </div>
+                    <div class="gallery-tags">
+                        <span class="tag">#팝업스토어</span>
+                        <span class="tag">#열정</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 굿즈 & 콜라보 섹션 -->
+    <section id="goods" class="goods">
+        <div class="container">
+            <h2 class="section-title">굿즈 & 콜라보</h2>
+            <p class="section-subtitle">이 캐릭터는 이런 굿즈에 잘 어울립니다</p>
+            <div class="goods-grid">
+                <div class="goods-item">
+                    <div class="goods-placeholder">
+                        <p>사원증/키링</p>
+                    </div>
+                    <p class="goods-name">직장인 필수템</p>
+                </div>
+                <div class="goods-item">
+                    <div class="goods-placeholder">
+                        <p>레디백</p>
+                    </div>
+                    <p class="goods-name">여행용 레디백</p>
+                </div>
+                <div class="goods-item">
+                    <div class="goods-placeholder">
+                        <p>데스크 매트</p>
+                    </div>
+                    <p class="goods-name">일잘러 데스크 매트</p>
+                </div>
+                <div class="goods-item">
+                    <div class="goods-placeholder">
+                        <p>지역특산 빵</p>
+                    </div>
+                    <p class="goods-name">냠이 콜라보 간식</p>
+                </div>
+            </div>
+            <div class="collaboration-section">
+                <h3>콜라보</h3>
+                <div class="collab-placeholder">
+                    <p>실제 콜라보가 있다면 로고+사진을 넣어주세요</p>
+                    <p class="placeholder-desc">없다면 "가능한 활용 예시"로 제안</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 사용 가이드 & 다운로드 섹션 -->
+    <section id="guide" class="guide">
+        <div class="container">
+            <h2 class="section-title">사용 가이드 & 다운로드</h2>
+            <div class="guide-content">
+                <div class="usage-cards">
+                    <div class="usage-card">
+                        <h3>비상업적 사용</h3>
+                        <p class="usage-status allowed">가능</p>
+                        <p class="usage-desc">[조건 설명 입력]</p>
+                    </div>
+                    <div class="usage-card">
+                        <h3>상업적 사용</h3>
+                        <p class="usage-status inquiry">별도 문의</p>
+                        <p class="usage-desc">[조건 설명 입력]</p>
+                    </div>
+                    <div class="usage-card">
+                        <h3>2차 창작</h3>
+                        <p class="usage-status allowed">허용 범위 내</p>
+                        <p class="usage-desc">[조건 설명 입력]</p>
+                    </div>
+                </div>
+                <div class="download-section">
+                    <h3>다운로드</h3>
+                    <div class="download-buttons">
+                        <a href="#" class="btn btn-download">
+                            <span>📦</span>
+                            캐릭터 기본형 패키지<br>
+                            <small>(.png, .ai)</small>
+                        </a>
+                        <a href="#" class="btn btn-download">
+                            <span>📄</span>
+                            간단 가이드 PDF<br>
+                            <small>(요약본)</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 뉴스 & 이벤트 섹션 -->
+    <section id="news" class="news">
+        <div class="container">
+            <h2 class="section-title">뉴스 & 이벤트</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image">
+                        <div class="news-placeholder">
+                            <p>뉴스 이미지</p>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">2025.12.01</span>
+                        <h3>[New] 성수동 팝업스토어 오픈!</h3>
+                        <p>고유통 대리가 직접 공수한 문경 사과 팝업! 현장 방문 시 '냠이' 스티커 증정.</p>
+                        <a href="#" class="news-link">자세히 보기 →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">
+                        <div class="news-placeholder">
+                            <p>뉴스 이미지</p>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">2025.11.15</span>
+                        <h3>고 대리 굿즈 런칭!</h3>
+                        <p>직장인 필수템부터 여행용 레디백까지. 일잘러를 위한 특별한 굿즈 라인업 공개.</p>
+                        <a href="#" class="news-link">자세히 보기 →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">
+                        <div class="news-placeholder">
+                            <p>뉴스 이미지</p>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">2025.11.01</span>
+                        <h3>KTX 역사에서 만나요!</h3>
+                        <p>전국 KTX 주요 역사에서 고유통 대리를 만날 수 있는 기회. 코코와 함께하는 특별 이벤트 진행 중.</p>
+                        <a href="#" class="news-link">자세히 보기 →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 문의 / 콜투액션 섹션 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h2 class="section-title">문의하기</h2>
+                    <p>협업 문의, 사용 허가, 뉴스레터 구독 등<br>언제든지 연락주세요!</p>
+                    <div class="contact-illustration">
+                        <div class="character-placeholder">
+                            <p>캐릭터 편지 포즈</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">이름</label>
+                        <input type="text" id="name" name="name" placeholder="이름을 입력하세요" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="organization">기관/회사</label>
+                        <input type="text" id="organization" name="organization" placeholder="기관 또는 회사명">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">이메일</label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiry-type">문의 종류</label>
+                        <select id="inquiry-type" name="inquiry-type" required>
+                            <option value="">선택하세요</option>
+                            <option value="collaboration">콜라보</option>
+                            <option value="license">라이선스</option>
+                            <option value="other">기타</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">메시지</label>
+                        <textarea id="message" name="message" rows="5" placeholder="문의 내용을 입력하세요"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">문의하기</button>
+                </form>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="인스타그램">
+                    <span>📷</span> Instagram
+                </a>
+                <a href="#" class="social-link" aria-label="유튜브">
+                    <span>🎥</span> YouTube
+                </a>
+                <a href="#" class="social-link" aria-label="블로그">
+                    <span>📝</span> Blog
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 코레일유통 - 고유통(Go Yu-Tong). All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 위로가기 버튼 (모바일용) -->
+    <button class="scroll-top" aria-label="위로가기">
+        ↑
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
