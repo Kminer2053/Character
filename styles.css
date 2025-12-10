@@ -925,6 +925,15 @@ section {
     margin-top: 2rem;
 }
 
+.contact-character-img {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    border-radius: 20px;
+    filter: drop-shadow(0 4px 12px rgba(0, 84, 166, 0.2));
+}
+
 .contact-form {
     background: white;
     padding: 2rem;
